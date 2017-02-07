@@ -10,13 +10,14 @@ for filename in files:
     df = pd.read_xlsx(filename)
 print(df)
 
-df['Stroop'] = np.nan
-df['AFSP'] = np.nan
-df['Survey'] = np.nan
-df['Other'] = np.nan
-df['valid_data'] = np.nan
+new_columns = ("stroop","afsp","survey","other","valid_data")
+    
+df['new_columns'] = np.NaN
 
-frame.loc[frame.\name of column\ =nan,'Stroop' ]
+df.\name of column\.repalce('',np.NaN)
+df.loc[df.\name of column\ =NaN,'stroop']=df[df.\name of column\=NaN].Stroop.replace({NaN:0})
+
+df_to.xlsx(path +'r/output/compiled')
 
 # Create a new column named accuracy and place data from the choice_prob column in the new accuracy column
 # Look at the Reversal column, in all instances where Reversal = 0 go to the accuracy column and change 25 to 0 and 75 to 1
