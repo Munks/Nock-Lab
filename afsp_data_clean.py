@@ -8,9 +8,15 @@ frames = []
 for filename in files:
     print(filename)
     df = pd.read_xlsx(filename)
-    frames.append(df)
-frame = pd.concat(frames)
-frame.to_xlsx(path + r'\output\compiled.xlsx')
+print(df)
+
+df['Stroop'] = np.nan
+df['AFSP'] = np.nan
+df['Survey'] = np.nan
+df['Other'] = np.nan
+df['valid_data'] = np.nan
+
+frame.loc[frame.\name of column\ =nan,'Stroop' ]
 
 # Create a new column named accuracy and place data from the choice_prob column in the new accuracy column
 # Look at the Reversal column, in all instances where Reversal = 0 go to the accuracy column and change 25 to 0 and 75 to 1
